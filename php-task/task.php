@@ -41,7 +41,7 @@ function filterArray($category, $array) {
     });
 
     usort($filteredArray, function($a, $b) {
-        return strtotime($a['published_date']) - strtotime($b['published_date']);
+        return strtotime($b['published_date']) - strtotime($a['published_date']);
     });
 
     return $filteredArray;

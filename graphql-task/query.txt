@@ -1,0 +1,5 @@
+query Countries {
+    countries(filter: { currency: { eq: "USD" } }) {
+        name
+    }
+}
